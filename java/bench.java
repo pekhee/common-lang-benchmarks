@@ -13,7 +13,7 @@ class Bench {
     }
     completionTime = new Date();
 
-    System.out.println("Java bench completed");
+    System.out.println("Java: Done");
     System.out.println(sum);
     System.out.println(completionTime.getTime() - startTime.getTime());
   }
