@@ -24,6 +24,7 @@ int main() {
   }
   completionTime = time_now();
 
+  puts("C:    Done");
   printf("%lld\n", sum);
   printf("%d\n", (int) (completionTime - currentTime));
   return 0;
