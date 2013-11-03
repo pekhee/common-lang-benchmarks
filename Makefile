@@ -1,4 +1,9 @@
+run: clean build bench
+	@echo "Bench complete"
+rebuild: clean build
+	@echo "Build complete"
 build:
+	@echo "Building"
 	@javac java/bench.java -d ./bin
 	@gcc   c/bench.c -o ./bin/bench
 bench:
@@ -9,4 +14,6 @@ bench:
 	@echo "-------C--------"
 	@./bin/bench
 clean:
-	rm ./bin/*
+	@echo "Cleaning"
+	@touch ./bin/tmp
+	@rm ./bin/*
